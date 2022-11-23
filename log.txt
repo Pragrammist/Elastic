@@ -1,0 +1,37 @@
+Логи, больше логов
+
+elasticsearch 
+	{ 
+		cloud_id => "Learning:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvOjQ0MyRlZmU2Y2UwMGQwY2U0ZDA1YjgwZDBiMDBmMWE3MDliOCQ0NzY4OWMxZjU4YTc0NTBkOTQ5OTVjOGU2NThlYzE0OQ==" 
+		user => 'elastic'
+		password => 'riNNe9R6GkPPnSuDaHxwEjXx'
+		index => 'logstash-search-app'
+		ilm_enabled => false
+		cacert => "<Path to: cluster-ca-certificate.pem>"
+		ssl => true 
+        ssl_certificate_verification => true 
+	}{"@version":"1","message":"","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"},"event":{"original":""},"@timestamp":"2022-11-22T09:46:03.330355600Z"}
+{"@version":"1","message":"","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"},"event":{"original":""},"@timestamp":"2022-11-22T09:46:06.518439500Z"}
+{"@version":"1","message":"","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"},"event":{"original":""},"@timestamp":"2022-11-22T09:46:17.152020100Z"}
+{"@version":"1","message":"","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"},"event":{"original":""},"@timestamp":"2022-11-22T09:46:38.700818100Z"}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T11:04:39.759153100Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T11:07:20.282001900Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T18:05:33.364995500Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T18:05:36.280551Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T18:05:46.985883Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T18:06:07.561799600Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T18:16:01.403664600Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T18:16:03.926549300Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:03:46.132485Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:03:49.738457900Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:04:24.889243400Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:04:27.652426600Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:05:29.050458100Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:05:32.565592800Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:05:45.996737900Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:06:06.550563200Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:07:15.398485700Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:07:19.477851100Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:07:30.792085200Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:16:31.321836900Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
+{"message":"","event":{"original":""},"@timestamp":"2022-11-22T19:16:35.917152Z","@version":"1","http":{"version":"HTTP/1.0","method":"GET"},"url":{"path":"/bad-request"},"host":{"ip":"0:0:0:0:0:0:0:1"}}
