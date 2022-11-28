@@ -60,7 +60,7 @@ namespace DocumentSearcher.Services
             //return values;
 
 
-            var searchResult = _elastic.Search<Payment>(s => s.Index("ecommerce_data2").Query(d => d.Bool(b => b.Should(SearchPaymentShould(query)))));
+            var searchResult = _elastic.Search<Payment>(s => s.Index("ecommerce_data").Query(d => d.Bool(b => b.Should(SearchPaymentShould(query)))));
             if (!searchResult.IsValid)
             {
                 var error = searchResult.ServerError.ToString();

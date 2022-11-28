@@ -1,26 +1,38 @@
 ﻿using Grpc.Core;
-using GrpcGreeter;
+using GrpcSearch;
+
 
 namespace DocumentSearcher.Services
 {
-    public class SearcherServicegRPC : GrpcGreeter.SearcherServicegRPC.SearcherServicegRPCBase
+    public class SearcherServicegRPC : GrpcSearch.SearchService.SearchServiceBase
     {
         SearchService _service;
         public SearcherServicegRPC(SearchService service)
         {
-            
+            _service = service;
         }
 
-        public override Task<SearchOutput> Search(QueryInput query, ServerCallContext context)
+        public override Task<SearchOutput> Search(QueryInput request, ServerCallContext context)
         {
-            var output = new SearchOutput { };
+            var searchResult = _service.SearchPayment(request.Query);
             
-
-
-            var search = _service.SearchPayment(query.Query);
-
-
-            return Task.FromResult<SearchOutput>();
+            var res = new SearchOutput();
+            var listRes = res.Payments;
+            foreach(var el in searchResult){
+                var payment = new Payment
+                {
+                    Country = el.Country,
+                    Description = el.Description,
+                    InvoiceDate = el.InvoiceDate,
+                    InvoiceNo = el.InvoiceNo,
+                    Quantity = el.Quantity,
+                    UnitPrice = el.UnitPrice,
+                    StockCode = el.StockCode,
+                };
+                listRes.Add(payment);
+            }
+            
+            return Task.FromResult<SearchOutput>(res);
         }
     }
 }

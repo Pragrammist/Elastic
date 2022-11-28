@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elastic", "Elastic\Elastic.csproj", "{0BF9BA77-4C89-4A30-BC1E-4EBBE12D4B2A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentSearcher", "DocumentSearcher\DocumentSearcher.csproj", "{A26D58F6-BAED-4330-95D1-D71E43E77DF2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logstash", "Logstash", "{4E98E7A3-9568-4B5D-A565-6271AACB109F}"

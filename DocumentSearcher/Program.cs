@@ -64,11 +64,11 @@ namespace DocumentSearcher
             var app = builder.Build();
             app.UseSerilogRequestLogging();
             // Configure the HTTP request pipeline.
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseAuthorization();
 
-            app.MapGrpcService<GreeterService>();
+            app.MapGrpcService<SearcherServicegRPC>();
 
             app.MapControllers();
 

@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcSearch";
+
+package search;
+
+service SearchService{
+    rpc Search (QueryInput) returns (SearchOutput);
+}
+
+message QueryInput{
+	string query = 1;
+}
+
+
+message SearchOutput{
+	repeated Payment Payments = 8;
+}
+
+message Payment{
+	double unit_price = 1;
+	string description = 2;
+	int32 quantity = 3; 
+	string Country = 4;
+	string InvoiceNo = 5;
+	string InvoiceDate = 6;
+	string StockCode = 7;
+}
